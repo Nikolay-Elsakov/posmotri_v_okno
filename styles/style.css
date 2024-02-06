@@ -149,22 +149,20 @@ ol {
 }
 
 .search-form__pseudo-checkbox {
-  position: relative;
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::before {
   content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  display: block;
   width: 15px;
   height: 15px;
-  margin-top: -7.5px;
-  margin-left: -7.5px;
   background-color: #fff;
 }
 
@@ -210,6 +208,7 @@ ol {
 
 .content__video-card-title {
   margin: 2px 0 6px 0;
+  overflow: hidden;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 30px;
@@ -217,7 +216,6 @@ ol {
   text-transform: uppercase;
   text-overflow: ellipsis;
   white-space: nowrap;
-  overflow: hidden;
 }
 
 .content__video-card-description {
